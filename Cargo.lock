@@ -1154,9 +1154,9 @@ dependencies = [
 
 [[package]]
 name = "futures-channel"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0448174b01148032eed37ac4aed28963aaaa8cfa93569a08e5b479bbc6c2c151"
+checksum = "31ebc390c6913de330e418add60e1a7e5af4cb5ec600d19111b339cafcdcc027"
 dependencies = [
  "futures-core",
  "futures-sink",
@@ -1164,9 +1164,9 @@ dependencies = [
 
 [[package]]
 name = "futures-core"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "18eaa56102984bed2c88ea39026cff3ce3b4c7f508ca970cedf2450ea10d4e46"
+checksum = "089bd0baf024d3216916546338fffe4fc8dfffdd901e33c278abb091e0d52111"
 
 [[package]]
 name = "futures-cpupool"
@@ -1191,15 +1191,15 @@ dependencies = [
 
 [[package]]
 name = "futures-io"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6e1798854a4727ff944a7b12aa999f58ce7aa81db80d2dfaaf2ba06f065ddd2b"
+checksum = "3868967e4e5ab86614e2176c99949eeef6cbcacaee737765f6ae693988273997"
 
 [[package]]
 name = "futures-macro"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e36fccf3fc58563b4a14d265027c627c3b665d7fed489427e88e7cc929559efe"
+checksum = "95778720c3ee3c179cd0d8fd5a0f9b40aa7d745c080f86a8f8bed33c4fd89758"
 dependencies = [
  "proc-macro-hack",
  "proc-macro2 1.0.24",
@@ -1209,24 +1209,24 @@ dependencies = [
 
 [[package]]
 name = "futures-sink"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e3ca3f17d6e8804ae5d3df7a7d35b2b3a6fe89dac84b31872720fc3060a0b11"
+checksum = "d4e0f6be0ec0357772fd58fb751958dd600bd0b3edfd429e77793e4282831360"
 
 [[package]]
 name = "futures-task"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "96d502af37186c4fef99453df03e374683f8a1eec9dcc1e66b3b82dc8278ce3c"
+checksum = "868090f28a925db6cb7462938c51d807546e298fb314088239f0e52fb4338b96"
 dependencies = [
  "once_cell",
 ]
 
 [[package]]
 name = "futures-util"
-version = "0.3.7"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abcb44342f62e6f3e8ac427b8aa815f724fd705dfad060b18ac7866c15bb8e34"
+checksum = "cad5e82786df758d407932aded1235e24d8e2eb438b6adafd37930c2462fb5d1"
 dependencies = [
  "futures-channel",
  "futures-core",
@@ -1235,7 +1235,7 @@ dependencies = [
  "futures-sink",
  "futures-task",
  "memchr 2.3.3",
- "pin-project 1.0.1",
+ "pin-project-lite 0.2.4",
  "pin-utils",
  "proc-macro-hack",
  "proc-macro-nested",
@@ -2643,6 +2643,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f7505eeebd78492e0f6108f7171c4948dbb120ee8119d9d77d0afa5469bef67f"
 
 [[package]]
+name = "pin-project-lite"
+version = "0.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "439697af366c49a6d0a010c56a0d97685bc140ce0d377b13a2ea2aa42d64a827"
+
+[[package]]
 name = "pin-utils"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2709,9 +2715,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro-hack"
-version = "0.5.16"
+version = "0.5.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e0456befd48169b9f13ef0f0ad46d492cf9d2dbb918bcf38e01eed4ce3ec5e4"
+checksum = "dbf0c48bc1d91375ae5c3cd81e3722dff1abcf81a30960240640d223f59fe0e5"
 
 [[package]]
 name = "proc-macro-nested"
@@ -3095,7 +3101,7 @@ dependencies = [
  "mime_guess",
  "native-tls",
  "percent-encoding 2.1.0",
- "pin-project-lite",
+ "pin-project-lite 0.1.5",
  "rustls",
  "serde",
  "serde_json",
@@ -5562,7 +5568,7 @@ dependencies = [
  "mio-named-pipes",
  "mio-uds",
  "num_cpus",
- "pin-project-lite",
+ "pin-project-lite 0.1.5",
  "signal-hook-registry",
  "slab",
  "tokio-macros 0.2.5",
@@ -5584,7 +5590,7 @@ dependencies = [
  "mio 0.7.4",
  "num_cpus",
  "parking_lot 0.11.0",
- "pin-project-lite",
+ "pin-project-lite 0.1.5",
  "signal-hook-registry",
  "slab",
  "tokio-macros 0.3.1",
@@ -5839,7 +5845,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "log 0.4.8",
- "pin-project-lite",
+ "pin-project-lite 0.1.5",
  "tokio 0.2.22",
 ]
 
@@ -5853,7 +5859,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "log 0.4.8",
- "pin-project-lite",
+ "pin-project-lite 0.1.5",
  "tokio 0.3.2",
 ]
 
