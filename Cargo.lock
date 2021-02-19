@@ -1104,6 +1104,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b"
 
 [[package]]
+name = "form_urlencoded"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5fc25a87fa4fd2094bffb06925852034d90a17f0d1e05197d4956d3555752191"
+dependencies = [
+ "matches",
+ "percent-encoding 2.1.0",
+]
+
+[[package]]
 name = "fs_extra"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2445,7 +2455,7 @@ dependencies = [
  "rand 0.7.3",
  "sha-1",
  "slab",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -3103,7 +3113,7 @@ dependencies = [
  "tokio 0.2.22",
  "tokio-rustls",
  "tokio-tls 0.3.1",
- "url 2.1.1",
+ "url 2.2.1",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
@@ -3386,7 +3396,7 @@ dependencies = [
  "dtoa",
  "itoa",
  "serde",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -3778,7 +3788,7 @@ dependencies = [
  "solana-sdk",
  "thiserror",
  "tiny-bip39",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -3825,7 +3835,7 @@ dependencies = [
  "tempfile",
  "thiserror",
  "tiny-bip39",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -3837,7 +3847,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_yaml",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -3890,7 +3900,7 @@ dependencies = [
  "solana-vote-program",
  "thiserror",
  "tungstenite",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -4211,7 +4221,7 @@ dependencies = [
  "solana-version",
  "tar",
  "tempfile",
- "url 2.1.1",
+ "url 2.2.1",
  "winapi 0.3.8",
  "winreg",
 ]
@@ -4445,7 +4455,7 @@ dependencies = [
  "solana-version",
  "tokio 0.1.22",
  "tokio-codec",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -4638,7 +4648,7 @@ dependencies = [
  "semver 0.9.0",
  "solana-sdk",
  "thiserror",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -4968,7 +4978,7 @@ dependencies = [
  "tempfile",
  "thiserror",
  "tokio 0.3.2",
- "url 2.1.1",
+ "url 2.2.1",
 ]
 
 [[package]]
@@ -6160,7 +6170,7 @@ dependencies = [
  "native-tls",
  "rand 0.7.3",
  "sha-1",
- "url 2.1.1",
+ "url 2.2.1",
  "utf-8",
 ]
 
@@ -6264,10 +6274,11 @@ dependencies = [
 
 [[package]]
 name = "url"
-version = "2.1.1"
+version = "2.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "829d4a8476c35c9bf0bbce5a3b23f4106f79728039b726d292bb93bc106787cb"
+checksum = "9ccd964113622c8e9322cfac19eb1004a07e636c545f325da085d5cdde6f1f8b"
 dependencies = [
+ "form_urlencoded",
  "idna 0.2.0",
  "matches",
  "percent-encoding 2.1.0",
