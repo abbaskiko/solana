@@ -47,7 +47,7 @@ solana-vote-program = { path = "../programs/vote", version = "1.5.0" }
 solana-vote-signer = { path = "../vote-signer", version = "1.5.0" }
 thiserror = "1.0.21"
 tiny-bip39 = "0.7.0"
-url = "2.1.1"
+url = "2.2.2"
 
 [dev-dependencies]
 solana-core = { path = "../core", version = "1.5.0" }
